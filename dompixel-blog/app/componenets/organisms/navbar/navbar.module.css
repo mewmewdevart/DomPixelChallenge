@@ -1,5 +1,6 @@
 .header {
   @apply bg-brand-secondary-10 w-full px-0 md:px-20 lg:px-40 h-[3.5rem];
+  border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
 }
 
 .inner {

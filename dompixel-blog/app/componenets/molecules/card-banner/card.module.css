@@ -1,0 +1,27 @@
+.card {
+    height: rem(240px);
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/beyonce-produtos-capilares.jpg);
+  }
+  
+  .content {
+    inset: 0;
+    @apply flex flex-col justify-end z-10 p-5 absolute;
+  }
+  
+  .title {
+    @apply text-brand-secondary-10;
+  }
+  
+  .description {
+    @apply max-w-[520px] text-brand-secondary-10;
+  }
+
+  .descriptionBlock {
+    @apply border-l-2 h-full flex flex-col text-brand-secondary-10 justify-center px-2;
+  }
+
+  .overlay {
+    @apply bg-brand-primary-10;
+  }
