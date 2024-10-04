@@ -1,0 +1,19 @@
+.header {
+  @apply bg-brand-secondary-10 w-full px-0 md:px-20 lg:px-40 h-[3.5rem];
+}
+
+.inner {
+  @apply flex items-center justify-between text-center h-[3.5rem];
+}
+
+.link {
+    @apply block leading-none py-2 px-3 no-underline text-brand-base-10 text-small font-regular;
+  
+    &:hover {
+      @apply bg-[#f7f9ff] ;
+    }
+  
+    [data-mantine-color-scheme] &[data-active] {
+      @apply bg-brand-primary-10 text-brand-secondary-10 font-bold;
+    }
+  }  
