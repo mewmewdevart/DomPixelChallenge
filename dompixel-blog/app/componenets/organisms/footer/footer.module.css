@@ -1,0 +1,9 @@
+.footer {
+  margin-top: rem(120px);
+  border-top: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
+  @apply  px-0 md:px-20 lg:px-40 bg-brand-secondary-10 w-full h-[3.5rem];
+}
+
+.inner {
+    @apply flex items-center justify-center text-center h-[3.5rem];
+}
