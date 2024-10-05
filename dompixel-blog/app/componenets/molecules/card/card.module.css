@@ -1,0 +1,20 @@
+.card {
+    @apply w-full;
+  }
+  
+  .section {
+    @apply border-[1px] border-[#e7e7e7] px-4 pb-4;
+  }
+  
+  .label {
+    text-transform: uppercase;
+    @apply font-extralight ;
+  }
+  
+  .overlay {
+    @apply bg-brand-primary-10 h-[287px] opacity-70;
+  }
+
+  .badge {
+    @apply bg-[#eaf1ff] text-brand-primary-30;
+  }

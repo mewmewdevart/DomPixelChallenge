@@ -1,0 +1,7 @@
+.cardsSection {
+    @apply px-5 md:px-20 lg:px-40 gap-4 flex flex-col;
+}
+
+.cardsContainer {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4;
+}
