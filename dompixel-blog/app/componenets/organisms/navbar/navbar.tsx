@@ -15,7 +15,7 @@ const links = [
   { link: "/panel", label: "Panel" },
 ];
 
-export function Navbar() {
+export function NavbarComponent() {
   const [opened, { toggle }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
 

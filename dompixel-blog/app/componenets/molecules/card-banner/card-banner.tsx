@@ -1,38 +1,80 @@
-import { Card, Overlay, Button, Text } from "@mantine/core";
+import { Card, Overlay, Text } from "@mantine/core";
 import style from "./card.module.css";
 
-export function CardBanner() {
-    const text = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis a
-consectetur voluptates quibusdam odio dolorum consequuntur.`;
+interface Post {
+  id: string;
+  title: string;
+  image: string;
+  date: string;
+  shortDescription: string;
+  author: string;
+  url: string;
+}
 
-const shortenedText = text.length > 100 ? `${text.slice(0, 100)}...` : text;
+interface CardBannerProps {
+  titlePage?: string;
+  posts: Post | null;
+}
 
+const CardBannerComponent: React.FC<CardBannerProps> = ({ posts }) => {
+  if (!posts) {
+    return (
+      <Text
+        size="sm"
+        className="text-center h-full flex items-center justify-center w-full bg-gray-300"
+      >
+        No posts available.
+      </Text>
+    );
+  }
 
+  const getShortenedText = (text: string) => {
+    return text.length > 100 ? `${text.slice(0, 100)}...` : text;
+  };
+
+  const formattedDate = new Date(posts.date).toLocaleDateString("en-GB");
+  
   return (
-    <Card radius="md" className={style.card}>
-      <Overlay className={style.overlay} opacity={0.7} zIndex={0} />
-
-      <div className={style.content}>
-        <Text size="lg" fw={700} className={style.title}>
-          Lorem ipsum
-        </Text>
-
-        <div className="flex flex-row justify-between">
-          <Text size="sm" className={style.description}>
-          {shortenedText} 
+    <a href={posts.url} aria-label={`Read more about ${posts.title}`}>
+      <Card
+        className={style.card}
+        style={{
+          height: "240px",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundImage: `url(${posts.image})`,
+        }}
+      >
+        <Overlay className={style.overlay} opacity={0.7} zIndex={0} />
+        <div className={style.content}>
+          <Text size="lg" fw={700} className={style.title}>
+            {posts.title}
           </Text>
-          <div className="flex flex-row">
-            <div className={style.descriptionBlock}>
-              <span className="text-xsmall">written by</span>
-              <Text size="sm">Lorem ipsum dolor</Text>
-            </div>
-            <div className={style.descriptionBlock}>
-              <span className="text-xsmall">published day</span>
-              <Text size="sm">00/00/0000</Text>
+          <div className="flex flex-col gap-5">
+            <div className="flex flex-col md:flex-row justify-between gap-5">
+              <Text size="sm" className={style.description}>
+                {getShortenedText(posts.shortDescription)}
+              </Text>
+              <div className="flex flex-row gap-4">
+                <div className={style.descriptionBlock}>
+                  <span className="text-xs">Written by</span>
+                  <Text size="sm" className="font-semibold">
+                    {posts.author}
+                  </Text>
+                </div>
+                <div className={style.descriptionBlock}>
+                  <span className="text-xs">Published on</span>
+                  <Text size="sm" className="font-semibold">
+                    {formattedDate}
+                  </Text>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </Card>
+      </Card>
+    </a>
   );
-}
+};
+
+export default CardBannerComponent;

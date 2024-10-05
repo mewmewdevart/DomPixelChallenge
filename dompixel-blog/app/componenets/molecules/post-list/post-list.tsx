@@ -1,42 +1,38 @@
 import React from "react";
 
-const PostList: React.FC = () => {
+interface Post {
+  id: string;
+  title: string;
+  url: string;
+}
+
+interface PostListComponentProps {
+  titlePage?: string;
+  posts: Post[];
+}
+
+const PostListComponent: React.FC<PostListComponentProps> = ({ titlePage, posts }) => {
   return (
-    <div>
-      <ul className="flex flex-col">
-          <li className='flex flex-col min-h-[42px]'>
-            <div>
-              <a href="/pages/post">Lorem ipsum</a>
-              <hr className="border-b-1 border-[#e7e7e7] "/>
-            </div>
-          </li>
-          <li className='flex flex-col min-h-[42px]'>
-            <div>
-              <a href="/pages/post">Lorem ipsum</a>
-              <hr className="border-b-1 border-[#e7e7e7] "/>
-            </div>
-          </li>
-          <li className='flex flex-col min-h-[42px]'>
-            <div>
-              <a href="/pages/post">Lorem ipsum</a>
-              <hr className="border-b-1 border-[#e7e7e7] "/>
-            </div>
-          </li>
-          <li className='flex flex-col min-h-[42px]'>
-            <div>
-              <a href="/pages/post">Lorem ipsum</a>
-              <hr className="border-b-1 border-[#e7e7e7] "/>
-            </div>
-          </li>
-          <li className='flex flex-col min-h-[42px]'>
-            <div>
-              <a href="/pages/post">Lorem ipsum</a>
-              <hr className="border-b-1 border-[#e7e7e7] "/>
-            </div>
-          </li>
-      </ul>
-    </div>
+    <section>
+      {titlePage && <h2 className="text-lg font-bold">{titlePage}</h2>}
+      {posts.length === 0 ? (
+        <p>No posts available.</p>
+      ) : (
+        <ul className="flex flex-col">
+          {posts.map((post) => (
+            <li key={post.id} className="flex flex-col min-h-[42px]">
+              <div>
+                <a href={post.url} className="text-brand-base-10 hover:underline" aria-label={`Read ${post.title}`}>
+                  {post.title}
+                </a>
+                <hr className="border-b-1 border-[#e7e7e7]" />
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
   );
 };
 
-export default PostList;
+export default PostListComponent;

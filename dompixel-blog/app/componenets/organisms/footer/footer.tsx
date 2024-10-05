@@ -2,7 +2,7 @@ import { Container, Group, ActionIcon, rem } from "@mantine/core";
 
 import style from "./footer.module.css";
 
-export function Footer() {
+export function FooterComponent() {
   return (
     <div className={style.footer}>
       <Container className={style.inner}>

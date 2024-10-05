@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { createTheme, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
+import { NavbarComponent } from "./componenets/organisms/navbar/navbar";
+import { FooterComponent } from "./componenets/organisms/footer/footer";
+
 import "./globals.css";
-import { Navbar } from "./componenets/organisms/navbar/navbar";
-import { Footer } from "./componenets/organisms/footer/footer";
 
 // 18pt Fonts
 const interBlackItalic18 = localFont({
@@ -140,9 +141,9 @@ export default function RootLayout({
           antialiased`}
       >
         <MantineProvider>
-          <Navbar />
+          <NavbarComponent />
           {children}
-          <Footer />
+          <FooterComponent />
         </MantineProvider>
       </body>
     </html>
