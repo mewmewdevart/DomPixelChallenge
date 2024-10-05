@@ -10,7 +10,7 @@ import logo from "@assets/logos/logo-line-blue.svg";
 import style from "./navbar.module.css";
 
 const links = [
-  { link: "/Blog", label: "Blog" },
+  { link: "/blog", label: "Blog" },
   { link: "/site", label: "Site" },
   { link: "/panel", label: "Panel" },
 ];
@@ -37,14 +37,16 @@ export function Navbar() {
   return (
     <header className={style.header}>
       <Container fluid className={style.inner}>
-        <Image
-          component={NextImage}
-          src={logo}
-          alt="Logotype of DomPixel"
-          width={100}
-          height={100}
-          className="w-[131px]"
-        />
+        <a href="/" style={{ display: "inline-block" }}>
+          <Image
+            component={NextImage}
+            src={logo}
+            alt="Logotype of DomPixel"
+            width={100}
+            height={100}
+            className="w-[131px]"
+          />
+        </a>
         <Group gap={5} visibleFrom="xs">
           {items}
         </Group>

@@ -1,16 +1,15 @@
-
-
 import React from 'react';
-import { createTheme, MantineProvider } from '@mantine/core';
+import RecentPost from './componenets/organisms/post-recent/post-recent';
+import CardsSectionComponent from './componenets/organisms/cards/cards';
 
-import HomePage from '@pages/home';
 
-export default function Home() {
+const HomePage: React.FC = () => {
   return (
-    <>
-    <MantineProvider>
-      <HomePage/>
-      </MantineProvider>
-    </>
+    <div className='flex flex-col w-full bg-brand-secondary-10'>
+        <RecentPost />
+        <CardsSectionComponent />
+    </div>
   );
-}
+};
+
+export default HomePage;
