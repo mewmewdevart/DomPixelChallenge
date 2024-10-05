@@ -3,12 +3,12 @@ import style from "./card.module.css";
 
 interface Post {
   id: string;
-  title: string;
+  title?: string;
   image: string;
   date: string;
-  shortDescription: string;
-  author: string;
-  url: string;
+  shortDescription?: string;
+  author?: string;
+  url?: string;
 }
 
 interface CardBannerProps {
@@ -28,12 +28,13 @@ const CardBannerComponent: React.FC<CardBannerProps> = ({ posts }) => {
     );
   }
 
-  const getShortenedText = (text: string) => {
+  const getShortenedText = (text: string | undefined) => {
+    if (!text) return "";
     return text.length > 100 ? `${text.slice(0, 100)}...` : text;
   };
 
   const formattedDate = new Date(posts.date).toLocaleDateString("en-GB");
-  
+
   return (
     <a href={posts.url} aria-label={`Read more about ${posts.title}`}>
       <Card
@@ -56,12 +57,14 @@ const CardBannerComponent: React.FC<CardBannerProps> = ({ posts }) => {
                 {getShortenedText(posts.shortDescription)}
               </Text>
               <div className="flex flex-row gap-4">
-                <div className={style.descriptionBlock}>
-                  <span className="text-xs">Written by</span>
-                  <Text size="sm" className="font-semibold">
-                    {posts.author}
-                  </Text>
-                </div>
+                {posts.author && (
+                  <div className={style.descriptionBlock}>
+                    <span className="text-xs">Written by</span>
+                    <Text size="sm" className="font-semibold">
+                      {posts.author}
+                    </Text>
+                  </div>
+                )}
                 <div className={style.descriptionBlock}>
                   <span className="text-xs">Published on</span>
                   <Text size="sm" className="font-semibold">

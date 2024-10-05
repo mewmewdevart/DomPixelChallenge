@@ -27,7 +27,7 @@ const data: DataPost[] = [
             { emoji: "🔋", label: "Lorem ipsum" },
             { emoji: "🌐", label: "Ipsum Lorem" }
         ],
-        url: "/postagem-1",
+        url: "pages/post/postagem-1",
     },
     {
         id: 2,
@@ -43,7 +43,7 @@ const data: DataPost[] = [
             { emoji: "🔋", label: "Lorem ipsum" },
             { emoji: "🌐", label: "Ipsum Lorem" }
         ],
-        url: "/postagem-2",
+        url: "pages/post/postagem-2",
     },
     {
         id: 3,
@@ -59,7 +59,7 @@ const data: DataPost[] = [
             { emoji: "🔋", label: "Lorem ipsum" },
             { emoji: "🌐", label: "Ipsum Lorem" }
         ],
-        url: "/postagem-3",
+        url: "pages/post/postagem-3",
     },
     {
         id: 4,
@@ -75,7 +75,7 @@ const data: DataPost[] = [
             { emoji: "🔋", label: "Lorem ipsum" },
             { emoji: "🌐", label: "Ipsum Lorem" }
         ],
-        url: "/postagem-4",
+        url: "pages/post/postagem-4",
     },
     {
         id: 5,
@@ -91,7 +91,7 @@ const data: DataPost[] = [
             { emoji: "🔋", label: "Lorem ipsum" },
             { emoji: "🌐", label: "Ipsum Lorem" }
         ],
-        url: "/postagem-5",
+        url: "pages/post/postagem-5",
     },
     {
         id: 6,
@@ -107,7 +107,7 @@ const data: DataPost[] = [
             { emoji: "🔋", label: "Lorem ipsum" },
             { emoji: "🌐", label: "Ipsum Lorem" }
         ],
-        url: "/postagem-6",
+        url: "pages/post/postagem-6",
     },
 ];
 

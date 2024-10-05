@@ -3,13 +3,32 @@ import CardBannerComponent  from "../../molecules/card-banner/card-banner";
 import PostListComponent from "../../molecules/post-list/post-list";
 import { CardUserComponent } from "../../molecules/card-user/card-user";
 
-const PostSectionComponent: React.FC = () => {
+interface Post {
+  id: string;
+  title: string;
+  shortDescription: string;
+  content: string;
+  author: string;
+  date: string;
+  image: string;
+  url: string;
+}
+
+interface PostSectionProps {
+  posts: Post[];
+}
+
+const PostSectionComponent: React.FC<PostSectionProps> = ({ posts }) => {
+  const currentlyPost = posts[0];
+
+  const { title, shortDescription, author, url, ...restOfPost } = currentlyPost;
+
   return (
     <div className="relative w-full h-fit px-5 md:px-20 lg:px-40 flex flex-col gap-4">
       <h2 className="mt-1 md:mt-2 lg:mt-4 font-semibold">Recent blog posts</h2>
       <div className="flex flex-col gap-4">
         <div className="w-full">
-          <CardBannerComponent />
+          <CardBannerComponent posts={restOfPost} />
         </div>
         <h3 className="font-bold text-large text-center">Lorem ipsum</h3>
         <p>

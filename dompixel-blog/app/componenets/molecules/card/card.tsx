@@ -45,7 +45,7 @@ export const CardComponent: React.FC<CardComponentProps> = ({ posts = [] }) => {
                     src={post.image}
                     width={383}
                     height={310}
-                    alt={post.title}
+                    alt={post.title ? post.title : "Post image"}
                     className="object-cover w-full h-full"
                   />
                   <div className="absolute inset-0 bg-brand-primary-10 opacity-50"></div>
