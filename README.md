@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/172d93f6-c92e-4f5a-ba95-60f3ac0cdd1f" alt="Dom Pixel Logo" style="width: 300px;">
+  <img src="https://github.com/user-attachments/assets/8c53234c-ffc3-477d-af86-bd3502a5052e" alt="Dom Pixel Logo" style="width: 300px;">
 </p>
 
 <p align="center">
@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-	<a href="" target="_blank">(Em Desenvolvimento)</a> 
+	<a href="https://dompixel-blog-peach.vercel.app/" target="_blank">(Em Desenvolvimento)</a> 
 </p>
 
 ## Tecnologias
