@@ -127,6 +127,18 @@ $ npm start
 
 **Observação:** Tanto o backend quanto o frontend devem estar em execução em terminais diferentes para funcionarem corretamente ao rodar o projeto localmente.
 
+## Resultado (TO DO)
+
+### Frontend
+
+- Resultado das implementações no Frontend : Url : ```http://localhost:3000/```
+
+### Backend
+
+## Experiência
+
+
+
 ## Tecnologias
 
 - [VS Code](https://code.visualstudio.com/): Ambiente de desenvolvimento integrado.
