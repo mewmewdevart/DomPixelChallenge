@@ -3,8 +3,10 @@ import React from "react";
 import CardBannerComponent from "@molecules/card-banner/card-banner";
 import PostListComponent from "@molecules/post-list/post-list";
 
+import { Post } from "@utils/types";
+
 interface RecentPostProps {
-  posts: any[];
+  posts: Post[];
 }
 
 const RecentPostComponent: React.FC<RecentPostProps> = ({ posts }) => {

@@ -3,14 +3,18 @@ import { IconPhoneCall, IconAt } from '@tabler/icons-react';
 
 import classes from './card.module.css';
 
-export function CardUserComponent() {
+interface CardUserComponentProps {
+  author: string;
+}
+
+export const CardUserComponent: React.FC<CardUserComponentProps> = ({ author }) => {
   return (
     <div>
       <Group wrap="nowrap">
         <Avatar
           src="https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg"
           size={94}
-          className='rounded-[100px]'
+          className="rounded-[100px]"
         />
         <div>
           <Text fz="xs" tt="uppercase" fw={700} c="dimmed">
@@ -18,7 +22,7 @@ export function CardUserComponent() {
           </Text>
 
           <Text fz="lg" fw={500} className={classes.name}>
-            Author
+            {author}
           </Text>
 
           <Group wrap="nowrap" gap={10} mt={3}>
@@ -38,4 +42,4 @@ export function CardUserComponent() {
       </Group>
     </div>
   );
-}
+};

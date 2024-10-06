@@ -18,7 +18,3 @@
   .overlay {
     @apply bg-brand-primary-10 h-[287px] opacity-70;
   }
-
-  .badge {
-    @apply bg-[#eaf1ff] text-brand-primary-30;
-  }

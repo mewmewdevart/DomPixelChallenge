@@ -2,11 +2,7 @@ import React from "react";
 
 import Link from "next/link";
 
-interface Post {
-  id: string;
-  title: string;
-  url: string;
-}
+import { Post } from "@utils/types";
 
 interface PostListComponentProps {
   titlePage?: string;

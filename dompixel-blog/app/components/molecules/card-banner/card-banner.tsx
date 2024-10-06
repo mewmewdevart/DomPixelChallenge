@@ -3,15 +3,7 @@ import { Card, Overlay, Text } from "@mantine/core";
 
 import style from "./card.module.css";
 
-interface Post {
-  id: string;
-  title?: string;
-  image: string;
-  date: string;
-  shortDescription?: string;
-  author?: string;
-  url?: string;
-}
+import { Post } from "@utils/types";
 
 interface CardBannerProps {
   titlePage?: string;

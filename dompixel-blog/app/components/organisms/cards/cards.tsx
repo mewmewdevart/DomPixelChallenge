@@ -1,23 +1,24 @@
 import React from "react";
-
 import { CardComponent } from "@molecules/card/card";
+
+import { Post } from "@utils/types";
 
 import style from "./cards.module.css";
 
 interface CardsSectionProps {
   title?: string;
-  posts: any[];
+  posts: Post[];
 }
 
 const CardsSectionComponent: React.FC<CardsSectionProps> = ({
   title,
   posts,
 }) => {
-  let popularPosts;
+  let popularPosts: Post[];
   if (title === "Most recent") {
     popularPosts = posts.slice(1, 5);
   } else {
-    const shuffleArray = (array: any[]) => {
+    const shuffleArray = (array: Post[]): Post[] => {
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
