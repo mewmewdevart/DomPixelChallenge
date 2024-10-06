@@ -2,6 +2,7 @@
 import React from "react";
 import { Card, Image, Text, Group, Badge } from "@mantine/core";
 import style from "./card.module.css";
+import Link from "next/link";
 
 interface Post {
   id: number;
@@ -37,7 +38,7 @@ export const CardComponent: React.FC<CardComponentProps> = ({ posts = [] }) => {
     <>
       {posts.length > 0 ? (
         posts.map((post) => (
-          <a href={post.url} key={post.id} role="link" tabIndex={0}>
+          <Link href={post.url} key={post.id} role="link" tabIndex={0}>
             <Card withBorder radius="md" p="md" className={style.card}>
               <Card.Section>
                 <div className="relative w-full h-[240px]">
@@ -69,7 +70,7 @@ export const CardComponent: React.FC<CardComponentProps> = ({ posts = [] }) => {
                 </Group>
               </Card.Section>
             </Card>
-          </a>
+          </Link>
         ))
       ) : (
         <Text

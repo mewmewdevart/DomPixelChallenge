@@ -17,7 +17,7 @@ export function CardUserComponent() {
           </Text>
 
           <Text fz="lg" fw={500} className={classes.name}>
-            Larissa Cristina
+            Author
           </Text>
 
           <Group wrap="nowrap" gap={10} mt={3}>

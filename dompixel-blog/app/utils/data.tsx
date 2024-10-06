@@ -2,7 +2,7 @@ import { StaticImageData } from 'next/image';
 
 export interface DataPost {
     id: number;
-    date: number;
+    date: string;
     image: string | StaticImageData;
     title: string;
     author: string;
@@ -15,8 +15,8 @@ export interface DataPost {
 const data: DataPost[] = [
     {
         id: 1,
-        image: "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/beyonce-produtos-capilares.jpg",
-        date: 17101999,
+        image: "https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png",
+        date: "2024-10-05",
         title: "Lorem ipsum dolor sit amet1",
         author: "Larissa",
         shortDescription: "Assaaaaorem ipsum dolor sit amet, consectetur adipiscing elitAssaaaaorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -27,12 +27,12 @@ const data: DataPost[] = [
             { emoji: "🔋", label: "Lorem ipsum" },
             { emoji: "🌐", label: "Ipsum Lorem" }
         ],
-        url: "pages/post/postagem-1",
+        url: "/pages/post",
     },
     {
         id: 2,
-        image: "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/beyonce-produtos-capilares.jpg",
-        date: 17101999,
+        image: "https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png",
+        date: "2024-10-05",
         title: "1Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         author: "Author",
         shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -47,8 +47,8 @@ const data: DataPost[] = [
     },
     {
         id: 3,
-        image: "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/beyonce-produtos-capilares.jpg",
-        date: 17101999,
+        image: "https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png",
+        date: "2024-10-05",
         title: "2Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         author: "Author",
         shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -59,12 +59,12 @@ const data: DataPost[] = [
             { emoji: "🔋", label: "Lorem ipsum" },
             { emoji: "🌐", label: "Ipsum Lorem" }
         ],
-        url: "pages/post/postagem-3",
+        url: "/pages/post",
     },
     {
         id: 4,
-        image: "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/beyonce-produtos-capilares.jpg",
-        date: 17101999,
+        image: "https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png",
+        date: "2024-10-05",
         title: "3Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         author: "Author",
         shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -75,12 +75,12 @@ const data: DataPost[] = [
             { emoji: "🔋", label: "Lorem ipsum" },
             { emoji: "🌐", label: "Ipsum Lorem" }
         ],
-        url: "pages/post/postagem-4",
+        url: "/pages/post",
     },
     {
         id: 5,
-        image: "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/beyonce-produtos-capilares.jpg",
-        date: 17101999,
+        image: "https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png",
+        date: "2024-10-05",
         title: "4Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         author: "Author",
         shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -91,12 +91,12 @@ const data: DataPost[] = [
             { emoji: "🔋", label: "Lorem ipsum" },
             { emoji: "🌐", label: "Ipsum Lorem" }
         ],
-        url: "pages/post/postagem-5",
+        url: "/pages/post",
     },
     {
         id: 6,
-        image: "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/beyonce-produtos-capilares.jpg",
-        date: 17101999,
+        image: "https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png",
+        date: "2024-10-05",
         title: "5Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         author: "Author",
         shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -107,7 +107,7 @@ const data: DataPost[] = [
             { emoji: "🔋", label: "Lorem ipsum" },
             { emoji: "🌐", label: "Ipsum Lorem" }
         ],
-        url: "pages/post/postagem-6",
+        url: "/pages/post",
     },
 ];
 

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { createTheme, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
-import { NavbarComponent } from "./componenets/organisms/navbar/navbar";
-import { FooterComponent } from "./componenets/organisms/footer/footer";
+import { NavbarComponent } from "./components/organisms/navbar/navbar";
+import { FooterComponent } from "./components/organisms/footer/footer";
 import '@mantine/tiptap/styles.css';
 
 import "./globals.css";

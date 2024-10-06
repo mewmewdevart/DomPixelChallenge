@@ -1,6 +1,10 @@
 .card {
     @apply w-full;
   }
+
+  .card:hover {
+    transform: scale(1.03);
+}
   
   .section {
     @apply border-[1px] border-[#e7e7e7] px-4 pb-4;

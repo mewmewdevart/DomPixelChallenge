@@ -2,42 +2,45 @@
 
 import { useState } from "react";
 import NextImage from "next/image";
-import { Burger, Container, Group, Image } from "@mantine/core";
+import { Burger, Container, Group, Image, Menu } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import Link from "next/link";
 
 import logo from "@assets/logos/logo-line-blue.svg";
 
 import style from "./navbar.module.css";
 
 const links = [
-  { link: "/blog", label: "Blog" },
-  { link: "/site", label: "Site" },
-  { link: "/panel", label: "Panel" },
+  { link: "/", label: "Blog" },
+  { link: "https://dompixel.com/", label: "Site" },
+  { link: "/pages/panel", label: "Panel" },
 ];
 
 export function NavbarComponent() {
-  const [opened, { toggle }] = useDisclosure(false);
+  const [opened, { toggle, close }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
 
+  const handleLinkClick = (link) => {
+    setActive(link);
+    close(); // Fecha o menu após clicar no link
+  };
+
   const items = links.map((link) => (
-    <a
+    <Link
       key={link.label}
       href={link.link}
       className={style.link}
       data-active={active === link.link || undefined}
-      onClick={(event) => {
-        event.preventDefault();
-        setActive(link.link);
-      }}
+      onClick={() => handleLinkClick(link.link)}
     >
       {link.label}
-    </a>
+    </Link>
   ));
 
   return (
     <header className={style.header}>
       <Container fluid className={style.inner}>
-        <a href="/" style={{ display: "inline-block" }}>
+        <Link href="/" style={{ display: "inline-block" }}>
           <Image
             component={NextImage}
             src={logo}
@@ -46,12 +49,22 @@ export function NavbarComponent() {
             height={100}
             className="w-[131px]"
           />
-        </a>
+        </Link>
         <Group gap={5} visibleFrom="xs">
           {items}
         </Group>
 
-        <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+        <Menu trigger="click-hover" openDelay={100} closeDelay={400}>
+          <Menu.Target>
+            <Burger
+              opened={opened}
+              onClick={toggle}
+              hiddenFrom="xs"
+              size="sm"
+            />
+          </Menu.Target>
+          <Menu.Dropdown>{items}</Menu.Dropdown>
+        </Menu>
       </Container>
     </header>
   );

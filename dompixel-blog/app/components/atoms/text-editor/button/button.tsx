@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useInterval } from '@mantine/hooks';
 import { Button, Progress, useMantineTheme, rgba } from '@mantine/core';
-import classes from './button.module.css';
+import style from './button.module.css';
 
 export function ButtonProgress() {
   const theme = useMantineTheme();
@@ -25,17 +25,17 @@ export function ButtonProgress() {
   return (
     <Button
       fullWidth
-      className={classes.button}
+      className={style.button}
       onClick={() => (loaded ? setLoaded(false) : !interval.active && interval.start())}
       color={loaded ? 'teal' : theme.primaryColor}
     >
-      <div className={classes.label}>
+      <div className={style.label}>
         {progress !== 0 ? 'Uploading post' : loaded ? 'Post uploaded' : 'Upload Post'}
       </div>
       {progress !== 0 && (
         <Progress
           value={progress}
-          className={classes.progress}
+          className={style.progress}
           color={rgba(theme.colors.blue[2], 0.35)}
           radius="sm"
         />

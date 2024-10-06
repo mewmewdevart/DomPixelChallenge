@@ -16,19 +16,19 @@ const CreatePostComponent = () => {
     <div>
       <div className="px-5 md:px-20 lg:px-40">
         <h3 className="mt-8 bg-brand-primary-10 w-[12rem] text-brand-secondary-10 pl-2 font-semi-bold">
-          CREATE A NEW POST
+          Create a new post
         </h3>
         <div className="flex gap-2 flex-col my-4">
-            <Text>Url of Image</Text>
-            <InputComponent placeholder="Type the url of image" />
-          <Text>Title</Text>
+          <Text className="font-semibold">Url of Image</Text>
+          <InputComponent placeholder="Type the url of image" />
+          <Text className="font-semibold">Title</Text>
           <InputComponent placeholder="Type the title of the content" />
-          <Text>Description</Text>
+          <Text className="font-semibold">Description</Text>
           <InputComponent placeholder="Type a short description of the content" />
-          <Text>Content</Text>
+          <Text className="font-semibold">Content</Text>
           <FormText />
 
-          <ButtonProgress/>
+          <ButtonProgress />
         </div>
       </div>
     </div>
