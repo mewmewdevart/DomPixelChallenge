@@ -37,7 +37,7 @@ const data: DataPost[] = [
         tagContent: [
             { emoji: "🌐", label: "Ipsum Lorem" }
         ],
-        url: "pages/post/postagem-2",
+        url: "/pages/post",
     },
     {
         id: 3,
