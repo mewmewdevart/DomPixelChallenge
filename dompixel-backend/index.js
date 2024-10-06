@@ -9,7 +9,7 @@ app.use(cors());
 let posts = [
   {
     id: 1,
-    image: "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/beyonce-produtos-capilares.jpg",
+    image: "https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png",
     date: '1999-10-17',
     title: "Lorem ipsum dolor sit amet1",
     author: "Larissa",
@@ -24,6 +24,10 @@ let posts = [
     url: "",
   },
 ];
+
+const generateSlug = (title) => {
+  return title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+};
 
 app.get('/', (req, res) => {
   const documentation = {
@@ -57,49 +61,58 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/post-info', (req, res) => {
-  res.json(posts);
+  const updatedPosts = posts.map(post => ({
+    ...post,
+    url: `/page/post/${post.id}`
+  }));
+  res.json(updatedPosts);
 });
 
 app.post('/api/create-post', (req, res) => {
-  const { id, image, date, title, author, shortDescription, content, tagContent, url } = req.body;
+  try {
+    const { id, image, date, title, author, shortDescription, content, tagContent } = req.body;
 
-  if (!title || typeof title !== 'string') {
-    return res.status(400).json({ message: 'Title is required and must be a string.' });
-  }
-  if (!content || typeof content !== 'string') {
-    return res.status(400).json({ message: 'Content is required and must be a string.' });
-  }
-  if (!image || typeof image !== 'string') {
-    return res.status(400).json({ message: 'Image is required and must be a string.' });
-  }
-  if (!date || !/\d{4}-\d{2}-\d{2}/.test(date)) {
-    return res.status(400).json({ message: 'Date is required and must be in the format YYYY-MM-DD.' });
-  }
-  if (!shortDescription || typeof shortDescription !== 'string') {
-    return res.status(400).json({ message: 'Short description is required and must be a string.' });
-  }
-  if (!Array.isArray(tagContent) || !tagContent.length) {
-    return res.status(400).json({ message: 'Tag content is required and must be a non-empty array.' });
-  }
+    if (!title || typeof title !== 'string') {
+      return res.status(400).json({ message: 'Title is required and must be a string.' });
+    }
+    if (!content || typeof content !== 'string') {
+      return res.status(400).json({ message: 'Content is required and must be a string.' });
+    }
+    if (!image || typeof image !== 'string') {
+      return res.status(400).json({ message: 'Image is required and must be a string.' });
+    }
+    if (!date || !/\d{4}-\d{2}-\d{2}/.test(date)) {
+      return res.status(400).json({ message: 'Date is required and must be in the format YYYY-MM-DD.' });
+    }
+    if (!shortDescription || typeof shortDescription !== 'string') {
+      return res.status(400).json({ message: 'Short description is required and must be a string.' });
+    }
+    if (!Array.isArray(tagContent) || !tagContent.length) {
+      return res.status(400).json({ message: 'Tag content is required and must be a non-empty array.' });
+    }
 
-  if (id && posts.some(post => post.id === id)) {
-    return res.status(400).json({ message: 'Post ID already exists.' });
+    if (id && posts.some(post => post.id === id)) {
+      return res.status(400).json({ message: 'Post ID already exists.' });
+    }
+
+    const newPost = {
+      id: id || uuidv4(),
+      image,
+      date,
+      title,
+      author: author || 'Anonymous',
+      shortDescription,
+      content,
+      tagContent,
+      url: `/page/post/${id || uuidv4()}`,
+    };
+
+    posts.push(newPost);
+    res.status(201).json(newPost);
+  } catch (error) {
+    console.error('Error creating post:', error);
+    res.status(500).json({ message: 'Internal Server Error' });
   }
-
-  const newPost = {
-    id: id || uuidv4(),
-    image,
-    date,
-    title,
-    author: author || 'Anonymous',
-    shortDescription,
-    content,
-    tagContent,
-    url: url || '',
-  };
-
-  posts.push(newPost);
-  res.status(201).json(newPost);
 });
 
 app.get('/api', (req, res) => {
