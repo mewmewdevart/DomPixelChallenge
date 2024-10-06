@@ -154,6 +154,10 @@ Blog/Panel
 
 ## Experiência (TO DO)
 
+Antes de iniciar o projeto, confeccionei uma interface simples, mas não tão fiel, no Figma. Esse design me ajudou a construir os componentes necessários para a aplicação, o que tornou as questões de layout mais tranquilas. No entanto, tive dificuldade em entender a arquitetura das páginas do Next.js e tentei aplicar o Atomic Design.
+
+Esta foi a minha primeira vez desenvolvendo um projeto além dos exercícios que faço, utilizando Next.js, e também a primeira vez que trabalhei com o Mantine. Durante minha experiência desenvolvendo o desafio prático, consegui ampliar meus conhecimentos sobre essas tecnologias, que antes eram bem básicos. Tive algumas dificuldades na hora de criar componentes e entender a estrutura do Next.js.
+
 
 
 
@@ -162,8 +166,7 @@ Blog/Panel
 - [VS Code](https://code.visualstudio.com/): Ambiente de desenvolvimento integrado.
 - [Git Bash](https://git-scm.com/downloads): Git Bash para realizar commits.
 - [Figma](https://www.figma.com/): Ferramenta de prototipagem para desenvolver elementos da interface.
-- [Node.js](https://nodejs.org/en): Plataforma para instalação de pacotes necessários para o frontend (React, Material UI, Bootstrap, etc.).
-- [Python](https://www.python.org/downloads/): Python para importação de pacotes no backend.
+- [Node.js](https://nodejs.org/en): Plataforma para instalação de pacotes necessários para o frontend (React, Express, Next, etc.).
 
 ## Referências
 
