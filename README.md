@@ -37,7 +37,7 @@
 
 ## Desafio
 
-O desafio propõe o desenvolvimento de um blog usando Next.js e Mantine. A aplicação deve permitir que os usuários visualizem e leiam as postagens do blog, bem como criem novas postagens. Como desenvolvedora frontend, sou responsável por criar o layout da página e preparar o frontend para receber os dados do backend.
+O [Teste Tecnico da Dom Pixel](https://github.com/dom-pixel/fullstack-job-test) propõe o desenvolvimento de um blog usando Next.js e Mantine. A aplicação deve permitir que os usuários visualizem e leiam as postagens do blog, bem como criem novas postagens. Como desenvolvedora frontend, sou responsável por criar o layout da página e preparar o frontend para receber os dados do backend.
 
 - **Página Inicial:** O usuário pode ver os posts atuais, bem como as postagens mais recentes e populares, com informações sobre data, autor, título e uma descrição curta do conteúdo.
 - **Página de Detalhes:** O usuário poderá ver a página do conteúdo com os aspectos mencionados acima (data, autor, etc.), além de visualizar o texto completo da postagem.
@@ -127,7 +127,7 @@ $ npm start
 <!-- **Observação:** Tanto o backend quanto o frontend devem estar em execução em terminais diferentes para funcionarem corretamente ao rodar o projeto localmente. -->
 
 
-## Resultado (TO DO)
+## Resultado
 
 ### Frontend
 
@@ -152,12 +152,15 @@ Blog/Panel
 ![screencapture-dompixel-blog-peach-vercel-app-pages-panel-2024-10-06-12_51_46](https://github.com/user-attachments/assets/e06f031e-b4b3-4623-8e86-190b465396d4)
 
 
-## Experiência (TO DO)
+## Experiência pessoaç
 
-Antes de iniciar o projeto, confeccionei uma interface simples, mas não tão fiel, no Figma. Esse design me ajudou a construir os componentes necessários para a aplicação, o que tornou as questões de layout mais tranquilas. No entanto, tive dificuldade em entender a arquitetura das páginas do Next.js e tentei aplicar o Atomic Design.
+Experiência enriquecedora; pude aprender bastante enquanto produzia o desafio. Tinha conhecimento superficial sobre Next e zero conhecimento sobre Mantine. Pode-se dizer que aprendi ambas as tecnologias do zero, fazendo pesquisas na documentação e em ferramentas externas neste desafio. No início, foram necessárias muitas tentativas para conseguir resolver os erros que surgiam na minha tela. A maioria deles estava ligada à estrutura do Next, mas, conforme fui produzindo, a quantidade de problemas que surgiam foi diminuindo.
 
-Esta foi a minha primeira vez desenvolvendo um projeto além dos exercícios que faço, utilizando Next.js, e também a primeira vez que trabalhei com o Mantine. Durante minha experiência desenvolvendo o desafio prático, consegui ampliar meus conhecimentos sobre essas tecnologias, que antes eram bem básicos. Tive algumas dificuldades na hora de criar componentes e entender a estrutura do Next.js.
+Antes de começar a codificar, desenvolvi uma interface no Figma para ter um norte sobre quais componentes seriam necessários para a aplicação, e isso facilitou o desenvolvimento do layout. Foi divertido criar alguns componentes do zero e fazer modificações nos componentes do Mantine, mesclando o "Only CSS" com "Tailwind CSS" nas estilizações do projeto. A biblioteca Mantine é rica em componentes; isso ajudou a tornar minhas ideias em realidade sem gastar muito tempo no desenvolvimento e a aplicar um pouco do Atomic Design na separação modular dos componentes.
 
+Tentei fazer um projeto integrado com o backend em Node Express, que seria hospedado no Vercel, porém o backend estava apresentando falhas. Como não queria ficar presa no desenvolvimento dele, dediquei as últimas horas ao layout. O fato de não conseguir fazer essa integração atrapalhou a obtenção das rotas. Gostaria que cada matéria do blog tivesse uma URL única gerada pela API, mas sem sucesso. Dependendo de como forem as próximas semanas, irei me esforçar para fazer o backend funcionar; assim, conseguirei usar os métodos GET, POST, CREATE e DELETE, ou até mesmo fazer a parte bônus relacionada à autenticação.
+
+Gostaria de ter tido mais tempo para fazer uma aplicação completa; porém, estou satisfeita com o resultado atual. Foi um desafio divertido.
 
 
 
@@ -167,6 +170,8 @@ Esta foi a minha primeira vez desenvolvendo um projeto além dos exercícios que
 - [Git Bash](https://git-scm.com/downloads): Git Bash para realizar commits.
 - [Figma](https://www.figma.com/): Ferramenta de prototipagem para desenvolver elementos da interface.
 - [Node.js](https://nodejs.org/en): Plataforma para instalação de pacotes necessários para o frontend (React, Express, Next, etc.).
+- [Next.js](https://nextjs.org/): Framework para React que permite a criação de aplicações web renderizadas no lado do servidor (SSR) e geração de sites estáticos (SSG).
+- [Mantine.js](https://mantine.dev/): iblioteca de componentes React que oferece uma ampla variedade de elementos pré-estilizados e personalizáveis.
 
 ## Referências
 
