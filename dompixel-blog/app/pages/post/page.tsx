@@ -1,10 +1,11 @@
 "use client";
+
 import React from 'react';
+import { NextPage } from 'next';
 
 import CardsSectionComponent from '@organisms/cards/cards';
 import PostSectionComponent from '@organisms/post-section/post-section';
 
-import { NextPage } from 'next';
 import dataPost from "@utils/data";
 
 const PostPage: NextPage = () => {

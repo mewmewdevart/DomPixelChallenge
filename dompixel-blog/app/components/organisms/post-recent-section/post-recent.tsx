@@ -1,7 +1,7 @@
 import React from "react";
 
-import CardBannerComponent from "../../molecules/card-banner/card-banner";
-import PostListComponent from "../../molecules/post-list/post-list";
+import CardBannerComponent from "@molecules/card-banner/card-banner";
+import PostListComponent from "@molecules/post-list/post-list";
 
 interface RecentPostProps {
   posts: any[];

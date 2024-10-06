@@ -1,8 +1,10 @@
 "use client";
+
 import React from "react";
-import { Card, Image, Text, Group, Badge } from "@mantine/core";
-import style from "./card.module.css";
 import Link from "next/link";
+import { Card, Image, Text, Group, Badge } from "@mantine/core";
+
+import style from "./card.module.css";
 
 interface Post {
   id: number;

@@ -1,5 +1,7 @@
 import React from "react";
-import { CardComponent } from "../../molecules/card/card";
+
+import { CardComponent } from "@molecules/card/card";
+
 import style from "./cards.module.css";
 
 interface CardsSectionProps {

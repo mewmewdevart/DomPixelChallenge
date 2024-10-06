@@ -1,5 +1,6 @@
 import { Avatar, Text, Group } from '@mantine/core';
 import { IconPhoneCall, IconAt } from '@tabler/icons-react';
+
 import classes from './card.module.css';
 
 export function CardUserComponent() {

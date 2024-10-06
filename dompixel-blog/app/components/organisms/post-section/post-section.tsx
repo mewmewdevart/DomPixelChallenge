@@ -1,7 +1,7 @@
 import React from "react";
-import CardBannerComponent  from "../../molecules/card-banner/card-banner";
-import PostListComponent from "../../molecules/post-list/post-list";
-import { CardUserComponent } from "../../molecules/card-user/card-user";
+
+import CardBannerComponent  from "@molecules/card-banner/card-banner";
+import { CardUserComponent } from "@molecules/card-user/card-user";
 
 interface Post {
   id: string;

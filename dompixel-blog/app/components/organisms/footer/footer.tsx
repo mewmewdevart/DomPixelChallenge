@@ -1,4 +1,4 @@
-import { Container, Group, ActionIcon, rem } from "@mantine/core";
+import { Container } from "@mantine/core";
 
 import style from "./footer.module.css";
 

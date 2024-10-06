@@ -1,10 +1,10 @@
 "use client";
-import CardsSectionComponent from '@organisms/cards/cards';
-import PostSectionComponent from '@organisms/post-section/post-section';
+
 import { NextPage } from 'next';
+import CardsSectionComponent from '@organisms/cards/cards';
+import CreatePostComponent from '@molecules/create-post/create-post';
 
 import dataPost from "@utils/data";
-import CreatePostComponent from '@molecules/create-post/create-post';
 
 const Panel: NextPage = () => {
   return (

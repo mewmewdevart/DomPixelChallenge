@@ -2,13 +2,14 @@
 
 import { useState } from "react";
 import NextImage from "next/image";
-import { Burger, Container, Group, Image, Menu } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
 import Link from "next/link";
 
-import logo from "@assets/logos/logo-line-blue.svg";
+import { Burger, Container, Group, Image, Menu } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
 
 import style from "./navbar.module.css";
+
+import logo from "@assets/logos/logo-line-blue.svg";
 
 const links = [
   { link: "/", label: "Blog" },
@@ -20,9 +21,9 @@ export function NavbarComponent() {
   const [opened, { toggle, close }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
 
-  const handleLinkClick = (link) => {
+  const handleLinkClick = (link: string) => {
     setActive(link);
-    close(); // Fecha o menu após clicar no link
+    close();
   };
 
   const items = links.map((link) => (

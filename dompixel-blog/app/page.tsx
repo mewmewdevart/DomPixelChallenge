@@ -1,7 +1,7 @@
 import React from 'react';
 
-import RecentPostComponent from './components/organisms/post-recent-section/post-recent';
-import CardsSectionComponent from './components/organisms/cards/cards';
+import RecentPostComponent from '@organisms/post-recent-section/post-recent';
+import CardsSectionComponent from '@organisms/cards/cards';
 
 import dataPost from "@utils/data";
 

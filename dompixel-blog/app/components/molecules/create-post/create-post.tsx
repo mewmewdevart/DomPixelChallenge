@@ -1,7 +1,8 @@
 "use client";
+
 import { Input, Text } from "@mantine/core";
-import { FormText } from "../../atoms/text-editor/text-editor";
-import { ButtonProgress } from "../../atoms/text-editor/button/button";
+import { FormText } from "@atoms/text-editor/text-editor";
+import { ButtonProgress } from "@atoms/button/button";
 
 interface InputComponentProps {
   placeholder: string;

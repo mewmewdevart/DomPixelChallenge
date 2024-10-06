@@ -1,6 +1,7 @@
-import { Card, Overlay, Text } from "@mantine/core";
-import style from "./card.module.css";
 import Link from "next/link";
+import { Card, Overlay, Text } from "@mantine/core";
+
+import style from "./card.module.css";
 
 interface Post {
   id: string;
