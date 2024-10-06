@@ -1,20 +1,42 @@
 .card {
-    @apply w-full;
-  }
-
-  .card:hover {
-    transform: scale(1.03);
+  @apply w-full transition-transform duration-200;
 }
-  
-  .section {
-    @apply border-[1px] border-[#e7e7e7] px-4 pb-4;
-  }
-  
-  .label {
-    text-transform: uppercase;
-    @apply font-extralight ;
-  }
-  
-  .overlay {
-    @apply bg-brand-primary-10 h-[287px] opacity-70;
-  }
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  @apply border-[1px] border-[#e7e7e7] px-4 pb-4;
+}
+
+.authorDate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overlay {
+  @apply absolute inset-0 bg-brand-primary-10 opacity-70;
+}
+
+.noPosts {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #e0e0e0;
+}

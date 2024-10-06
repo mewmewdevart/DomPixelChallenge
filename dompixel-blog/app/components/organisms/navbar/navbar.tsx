@@ -6,15 +6,16 @@ import Link from "next/link";
 
 import { Burger, Container, Group, Image, Menu } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import { PAGES_PATH, POSTS_PATH, HOME_PATH, PANEL_PATH } from '@routers/constants';
 
 import style from "./navbar.module.css";
 
 import logo from "@assets/logos/logo-line-blue.svg";
 
 const links = [
-  { link: "/", label: "Blog" },
+  { link: HOME_PATH, label: "Blog" },
   { link: "https://dompixel.com/", label: "Site" },
-  { link: "/pages/panel", label: "Panel" },
+  { link: PAGES_PATH + PANEL_PATH , label: "Panel" },
 ];
 
 export function NavbarComponent() {

@@ -38,6 +38,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "app/components/atoms/overlay", "app/components/atoms/text"  ],
   "exclude": ["node_modules"]
 }

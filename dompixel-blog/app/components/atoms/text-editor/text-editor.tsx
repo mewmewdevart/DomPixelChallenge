@@ -6,7 +6,7 @@ import { IconBold, IconItalic } from '@tabler/icons-react';
 const BoldIcon = () => <IconBold size="1rem" stroke={3.5} />;
 const ItalicIcon = () => <IconItalic size="1rem" stroke={3.5} />;
 
-export function FormText() {
+export function FormTextComponent() {
   const editor = useEditor({
     extensions: [StarterKit],
     content: '<p>Digit the text content</p>',

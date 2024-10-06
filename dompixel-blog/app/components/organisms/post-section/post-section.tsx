@@ -1,7 +1,9 @@
 import React from "react";
 import { Text } from "@mantine/core";
-import CardBannerComponent from "@molecules/card-banner/card-banner";
+
+import Banner from "@organisms/banner/banner";
 import { CardUserComponent } from "@molecules/card-user/card-user";
+
 import { Post } from "@utils/types";
 
 interface PostSectionProps {
@@ -21,7 +23,7 @@ const PostSectionComponent: React.FC<PostSectionProps> = ({ posts }) => {
       <h2 className="mt-1 md:mt-2 lg:mt-4 font-semibold">Recent blog posts</h2>
       <div className="flex flex-col gap-4">
         <div className="w-full">
-        <CardBannerComponent posts={currentlyPost} />
+        <Banner posts={currentlyPost} />
         </div>
         <h3 className="font-bold text-large text-center">{title}</h3>
         <p>{content}</p>

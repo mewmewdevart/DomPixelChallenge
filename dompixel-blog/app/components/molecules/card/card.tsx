@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Card, Image, Text, Group } from "@mantine/core";
-import { BadgeList } from "@atoms/badge/badge";
+import { BadgeComponent } from "@atoms/badge/badge";
+
 import { Post } from "@utils/types";
+
 import style from "./card.module.css";
 
 interface CardComponentProps {
@@ -24,20 +26,20 @@ export const CardComponent: React.FC<CardComponentProps> = ({ posts = [] }) => {
             <Link href={post.url} key={post.id} role="link" tabIndex={0}>
               <Card withBorder radius="md" p="md" className={style.card}>
                 <Card.Section>
-                  <div className="relative w-full h-[240px]">
+                  <div className={style.imageWrapper}>
                     <Image
                       src={post.image}
+                      alt={post.title}
                       width={383}
-                      height={310}
-                      alt="Titulo de Card"
-                      className="object-cover w-full h-full"
+                      height={240}
+                      className={style.image}
                     />
-                    <div className="absolute inset-0 bg-brand-primary-10 opacity-50"></div>
+                    <div className={style.overlay}></div>
                   </div>
                 </Card.Section>
 
                 <Card.Section className={style.section} mt="md">
-                  <Text fz="sm" mt="xs" className="flex justify-between">
+                  <Text fz="sm" mt="xs" className={style.authorDate}>
                     {post.author} - {post.date}
                   </Text>
                   <Group justify="apart">
@@ -49,7 +51,7 @@ export const CardComponent: React.FC<CardComponentProps> = ({ posts = [] }) => {
                     {post.shortDescription}
                   </Text>
                   <Group gap={7} mt={5}>
-                    <BadgeList badges={post.tagContent} />
+                    <BadgeComponent badges={post.tagContent} />
                   </Group>
                 </Card.Section>
               </Card>
@@ -58,7 +60,7 @@ export const CardComponent: React.FC<CardComponentProps> = ({ posts = [] }) => {
         ) : (
           <Text
             size="sm"
-            className="text-center h-full flex items-center justify-center w-full bg-gray-300"
+            className={style.noPosts}
           >
             No posts available.
           </Text>

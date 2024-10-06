@@ -1,5 +1,7 @@
 import { StaticImageData } from 'next/image';
 
+import { PAGES_PATH, POSTS_PATH } from '@routers/constants';
+
 export interface DataPost {
     id: number;
     date?: string;
@@ -24,7 +26,7 @@ const data: DataPost[] = [
         tagContent: [
             { emoji: "⚙️", label: "Lorem" },
         ],
-        url: "/pages/post",
+        url: PAGES_PATH + POSTS_PATH,
     },
     {
         id: 2,
@@ -37,7 +39,7 @@ const data: DataPost[] = [
         tagContent: [
             { emoji: "🌐", label: "Ipsum Lorem" }
         ],
-        url: "/pages/post",
+        url: PAGES_PATH + POSTS_PATH,
     },
     {
         id: 3,
@@ -51,7 +53,7 @@ const data: DataPost[] = [
             { emoji: "⚙️", label: "Lorem" },
             { emoji: "🔋", label: "Lorem ipsum" }
         ],
-        url: "/pages/post",
+        url: PAGES_PATH + POSTS_PATH,
     },
     {
         id: 4,
@@ -65,7 +67,7 @@ const data: DataPost[] = [
             { emoji: "⚙️", label: "Lorem" },
             { emoji: "🛠️", label: "Ipsum" },
         ],
-        url: "/pages/post",
+        url: PAGES_PATH + POSTS_PATH,
     },
     {
         id: 5,
@@ -79,7 +81,7 @@ const data: DataPost[] = [
             { emoji: "🔋", label: "Lorem ipsum" },
             { emoji: "🌐", label: "Ipsum Lorem" }
         ],
-        url: "/pages/post",
+        url: PAGES_PATH + POSTS_PATH,
     },
     {
         id: 6,
@@ -93,7 +95,7 @@ const data: DataPost[] = [
             { emoji: "⚙️", label: "Lorem" },
             { emoji: "🌐", label: "Ipsum Lorem" }
         ],
-        url: "/pages/post",
+        url: PAGES_PATH + POSTS_PATH,
     },
 ];
 

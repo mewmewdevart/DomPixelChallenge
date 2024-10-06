@@ -1,6 +1,6 @@
 import React from "react";
 
-import CardBannerComponent from "@molecules/card-banner/card-banner";
+import Banner from "@organisms/banner/banner";
 import PostListComponent from "@molecules/post-list/post-list";
 
 import { Post } from "@utils/types";
@@ -18,7 +18,7 @@ const RecentPostComponent: React.FC<RecentPostProps> = ({ posts }) => {
       <h2 className="mt-1 md:mt-2 lg:mt-4 font-semibold">Recent blog posts</h2>
       <div className="flex flex-col lg:flex-row gap-4">
         <div className="w-full lg:w-3/4">
-          <CardBannerComponent posts={latestPost}/>
+          <Banner posts={latestPost}/>
         </div>
         <div className="w-full lg:w-[386px]">
           <h3 className="mb-4 bg-brand-primary-10 w-[12rem] text-brand-secondary-10 pl-2 font-semi-bold">

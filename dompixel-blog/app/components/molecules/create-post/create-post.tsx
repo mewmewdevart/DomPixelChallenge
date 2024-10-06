@@ -1,8 +1,8 @@
 "use client";
 
 import { Input, Text } from "@mantine/core";
-import { FormText } from "@atoms/text-editor/text-editor";
-import { ButtonProgress } from "@atoms/button/button";
+import { FormTextComponent } from "@atoms/text-editor/text-editor";
+import { ButtonProgressComponent } from "@atoms/button-progress/button";
 
 interface InputComponentProps {
   placeholder: string;
@@ -27,9 +27,9 @@ const CreatePostComponent = () => {
           <Text className="font-semibold">Description</Text>
           <InputComponent placeholder="Type a short description of the content" />
           <Text className="font-semibold">Content</Text>
-          <FormText />
+          <FormTextComponent />
 
-          <ButtonProgress />
+          <ButtonProgressComponent />
         </div>
       </div>
     </div>
