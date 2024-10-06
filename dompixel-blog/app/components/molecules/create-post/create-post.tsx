@@ -16,7 +16,7 @@ const CreatePostComponent = () => {
   return (
     <div>
       <div className="px-5 md:px-20 lg:px-40">
-        <h3 className="mt-8 bg-brand-primary-10 w-[12rem] text-brand-secondary-10 pl-2 font-semi-bold">
+        <h3 className="mt-4 bg-brand-primary-10 w-[12rem] text-brand-secondary-10 pl-2 font-semi-bold">
           Create a new post
         </h3>
         <div className="flex gap-2 flex-col my-4">

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import { Burger, Container, Group, Image, Menu } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { PAGES_PATH, POSTS_PATH, HOME_PATH, PANEL_PATH } from '@routers/constants';
+import { PAGES_PATH, HOME_PATH, PANEL_PATH } from '@routers/constants';
 
 import style from "./navbar.module.css";
 

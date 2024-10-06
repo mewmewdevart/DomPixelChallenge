@@ -29,7 +29,7 @@ export function ButtonProgressComponent() {
 
   const buttonLabel = () => {
     if (progress !== 0) return "Uploading post";
-    return loaded ? "Post uploaded" : "Upload Post";
+    return loaded ? "Post upload failed. Please try again." : "Upload Post";
   };
 
   return (
@@ -37,7 +37,7 @@ export function ButtonProgressComponent() {
       fullWidth
       className={styles.button}
       onClick={handleClick}
-      color={loaded ? "teal" : theme.primaryColor}
+      color={loaded ? "red" : "blue"}
     >
       <div className={styles.label}>{buttonLabel()}</div>
       {progress !== 0 && (

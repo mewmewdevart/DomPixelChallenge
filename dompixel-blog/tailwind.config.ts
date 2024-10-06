@@ -23,21 +23,21 @@ module.exports = {
             '10': custom.colors.brand.base['10'].hex,
           },
         },
-        suport: {
+        support: {
           information: {
-            '10': custom.colors.suport.information['10'].hex,
+            '10': custom.colors.support.information['10'].hex,
           },
           error: {
-            '10': custom.colors.suport.error['10'].hex,
+            '10': custom.colors.support.error['10'].hex,
           },
           warning: {
-            '10': custom.colors.suport.warning['10'].hex,
+            '10': custom.colors.support.warning['10'].hex,
           },
           success: {
-            '10': custom.colors.suport.success['10'].hex,
+            '10': custom.colors.support.success['10'].hex,
           },
           message: {
-            '10': custom.colors.suport.message['10'].hex,
+            '10': custom.colors.support.message['10'].hex,
           },
         },
       },

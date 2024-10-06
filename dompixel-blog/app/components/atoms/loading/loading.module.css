@@ -1,0 +1,25 @@
+.loadingSection {
+    @apply fixed top-0 left-0 w-screen h-screen flex justify-center items-center z-[9999] transition-opacity duration-300 ease-in-out bg-brand-secondary-10;
+}
+
+.loadingSection .loadingIndicator {
+    width: 75px;
+    height: 75px;
+    border: 0.25rem solid rgba(255, 255, 255, 0.2);
+    -webkit-animation: spin 1s infinite linear;
+    animation: spin 1s infinite linear;
+    @apply rounded-full border-white/20 border-t-[#054DFC];
+}
+
+.loadingSection img {
+    @apply absolute w-12; 
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
