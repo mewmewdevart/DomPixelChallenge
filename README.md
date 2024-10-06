@@ -152,7 +152,7 @@ Blog/Panel
 ![screencapture-dompixel-blog-peach-vercel-app-pages-panel-2024-10-06-12_51_46](https://github.com/user-attachments/assets/e06f031e-b4b3-4623-8e86-190b465396d4)
 
 
-## Experiência pessoaç
+## Experiência pessoal
 
 Experiência enriquecedora; pude aprender bastante enquanto produzia o desafio. Tinha conhecimento superficial sobre Next e zero conhecimento sobre Mantine. Pode-se dizer que aprendi ambas as tecnologias do zero, fazendo pesquisas na documentação e em ferramentas externas neste desafio. No início, foram necessárias muitas tentativas para conseguir resolver os erros que surgiam na minha tela. A maioria deles estava ligada à estrutura do Next, mas, conforme fui produzindo, a quantidade de problemas que surgiam foi diminuindo.
 
