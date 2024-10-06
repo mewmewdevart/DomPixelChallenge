@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-	<a href="https://dompixel-blog-peach.vercel.app/" target="_blank">(Em Desenvolvimento)</a> 
+	<a href="https://dompixel-blog-peach.vercel.app/" target="_blank">Acesse o Site</a> 
 </p>
 
 ## Sumário
@@ -30,7 +30,6 @@
       - [Frontend (dompixel-blog)](#frontend-dompixel-blog)
 6. [Resultado](#resultado)
     - [Frontend](#frontend)
-    - [Backend](#backend)
 7. [Tecnologias](#tecnologias)
 8. [Referências](#referências)
 9. [Licença](#licença)
@@ -46,11 +45,11 @@ O desafio propõe o desenvolvimento de um blog usando Next.js e Mantine. A aplic
 
 ## Curiosidade
 Desenvolvi uma interface no Figma simulando como eu gostaria que o blog fosse. Isso me ajudou na estruturação do layout, embora eu não tenha sido 100% fiel ao design.  
-<a href=" " target="_blank">Figma - Protótipo do Desafio: DomPixel Blog</a>
+<a href="https://www.figma.com/design/bYRrHebJAAYoA9hQmjf7Oj/Desafios-Tenicos?node-id=70-2&t=EKrLPcBuPh8G46d1-1" target="_blank">Figma - Protótipo do Desafio: DomPixel Blog</a>
 
 ## Estrutura do Projeto
 
-- `dompixel-backend/`: Pasta que contém o backend da aplicação, uma API desenvolvida usando Node - Express com dados fictícios.
+- `dompixel-backend/`: Pasta que contém o backend da aplicação, uma API desenvolvida usando Node - Express com dados fictícios. (Não funciona)
 - `dompixel-blog/`: Pasta que contém o frontend do projeto, desenvolvido utilizando Next e Mantine com Tailwind.
 
 ## Implementações
@@ -102,7 +101,7 @@ $ cd DompixelBlog
 
 #### Backend (dompixel-backend)
 
-TO DO/
+TO DO/ O backend não está funcionando e não está integrado ao projeto. Por conta disso, não irei prosseguir com o tutorial de instalação.
 
 #### Frontend (dompixel-blog)
 
@@ -125,7 +124,8 @@ $ npm start
 # Acesse a visualização do Frontend através da URL http://localhost:3000/
 ```
 
-**Observação:** Tanto o backend quanto o frontend devem estar em execução em terminais diferentes para funcionarem corretamente ao rodar o projeto localmente.
+<!-- **Observação:** Tanto o backend quanto o frontend devem estar em execução em terminais diferentes para funcionarem corretamente ao rodar o projeto localmente. -->
+
 
 ## Resultado (TO DO)
 
@@ -133,9 +133,27 @@ $ npm start
 
 - Resultado das implementações no Frontend : Url : ```http://localhost:3000/```
 
-### Backend
+#### Video:
+
+[Screencast from 2024-10-06 12-48-10.webm](https://github.com/user-attachments/assets/9ce9c703-ef57-49b2-9b02-96dbe84a119d)
+
+#### Printscreen:
+
+Blog/
+
+![screencapture-dompixel-blog-peach-vercel-app-2024-10-06-12_51_30](https://github.com/user-attachments/assets/aad4db47-e1ab-4cf1-9a1b-0431f4fea96f)
+
+Blog/Post/
+
+![screencapture-dompixel-blog-peach-vercel-app-pages-post-2024-10-06-12_51_39](https://github.com/user-attachments/assets/2aa2e9b9-4de8-4342-8056-70b060a4af85)
+
+Blog/Panel
+
+![screencapture-dompixel-blog-peach-vercel-app-pages-panel-2024-10-06-12_51_46](https://github.com/user-attachments/assets/e06f031e-b4b3-4623-8e86-190b465396d4)
+
 
 ## Experiência (TO DO)
+
 
 
 
