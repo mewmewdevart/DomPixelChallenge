@@ -9,6 +9,10 @@
 </p>
 
 <p align="center">
+    Observação: Até a data desta atualização (31 de outubro), a DomPixel ainda não forneceu feedback sobre o projeto nem sobre o processo seletivo. Entrei em contato por e-mail solicitando um retorno, mas não obtive sucesso.
+</p>
+
+<p align="center">
 	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/mewmewdevart/DompixelBlog?color=054DFC" />
 	<img alt="Main language" src="https://img.shields.io/github/languages/top/mewmewdevart/DompixelBlog?color=054DFC"/>
 	<img alt="License" src="https://img.shields.io/github/license/mewmewdevart/DompixelBlog?color=054DFC"/>
