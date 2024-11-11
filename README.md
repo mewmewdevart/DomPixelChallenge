@@ -195,5 +195,3 @@ Este projeto é licenciado nos termos do arquivo [LICENÇA](LICENSE). Consulte o
   <a href="https://linktr.ee/mewmewdevart" target="_blank">Larissa Cristina Benedito</a>
 </p>
 
-
-Sinta-se à vontade para ajustar conforme necessário!
