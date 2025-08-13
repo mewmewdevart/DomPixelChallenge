@@ -9,14 +9,21 @@
 </p>
 
 <p align="center">
-    Observação: Até a data desta atualização (31 de outubro), a DomPixel ainda não forneceu feedback sobre o projeto nem sobre o processo seletivo. Entrei em contato por e-mail solicitando um retorno, mas não obtive sucesso.
+	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/mewmewdevart/DomPixelChallenge?color=054DFC" />
+	<img alt="Main language" src="https://img.shields.io/github/languages/top/mewmewdevart/DomPixelChallenge?color=054DFC"/>
+	<img alt="License" src="https://img.shields.io/github/license/mewmewdevart/DomPixelChallenge?color=054DFC"/>
 </p>
 
-<p align="center">
-	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/mewmewdevart/DompixelBlog?color=054DFC" />
-	<img alt="Main language" src="https://img.shields.io/github/languages/top/mewmewdevart/DompixelBlog?color=054DFC"/>
-	<img alt="License" src="https://img.shields.io/github/license/mewmewdevart/DompixelBlog?color=054DFC"/>
-</p>
+> [!WARNING]
+> Este projeto foi desenvolvido como parte do desafio técnico para a vaga de **Desenvolvedora Front-End** na **DomPixel**, após eu ter me inscrito em uma vaga publicada pela empresa e sido **convidada pelo próprio fundador, via LinkedIn**, a participar do processo.
+>
+> **Aviso sobre o Processo Seletivo:**
+>
+> O desafio técnico, com prazo de 48 horas, incluiu requisitos de **Fullstack** como diferencial solicitando implementação de backend e banco de dados, apesar de a vaga ser para **Frontend** o que extrapolou o escopo esperado para a posição.
+>
+> Mantive contato por e-mail e mensagens diretas com o fundador durante o desenvolvimento. No entanto, após a entrega do projeto, não houve qualquer retorno até 18 dias depois, quando recebi uma comunicação genérica informando que não seguiria no processo, sem apresentação de **feedback técnico**.
+>
+> Diante da ausência de retorno construtivo e da falta de clareza na condução, não recomendo a participação em processos seletivos da DomPixel, considerando que o tempo e a dedicação dos candidatos podem não ser devidamente valorizados.
 
 <p align="center">
 	<a href="https://dompixel-blog-peach.vercel.app/" target="_blank">Acesse o Site</a> 
